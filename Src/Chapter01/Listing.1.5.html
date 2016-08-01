@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Shadow DOM</title>
+</head>
+<body>
+    <!-- Shadow host -->
+    <div id="orderForm"></div>
+
+    <!-- Shadow template -->
+    <template id="orderTemplate">
+        <form action="/submitOrder" method="POST">
+            <label for="txtQuantity">Quantity:</label>
+            <input id="txtQuantity" type="number"></input>
+            <button type="submit">Order</button>
+        </form>
+    </template>
+    <script>
+        var root = document.querySelector('#orderForm').createShadowRoot();
+        var template = document.querySelector('#orderTemplate');
+        var clone = document.importNode(template.content, true);
+        root.appendChild(clone);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Shadow DOM</title>
+</head>
+<body>
+    <button>Hello, world!</button>
+    <script>
+        var host = document.querySelector('button');
+        var root = host.createShadowRoot();
+        root.textContent = 'Hello, from Shadow DOM!';
+    </script>
+
+</body>
+</html>

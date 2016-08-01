@@ -1,0 +1,26 @@
+{
+  "name": "Chapter01",
+  "homepage": "https://github.com/raffaeu/polymer-in-action",
+  "authors": [
+    "Raffaele Garofalo"
+  ],
+  "description": "Polymer project for Chapter 01 of Polymer in Action",
+  "main": "index.html",
+  "keywords": [
+    "Polymer"
+  ],
+  "license": "APACHE",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#1.6.0",
+    "iron-elements": "PolymerElements/iron-elements#^1.0.10",
+    "paper-elements": "PolymerElements/paper-elements#^1.0.7"
+  }
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Shadow DOM</title>
+</head>
+<body>
+    <h3>Non styled area</h3>
+    <div>
+        <h3>Shadow host</h3>
+    </div>
+    <script>
+        var root = document.querySelector('div').createShadowRoot();
+        root.innerHTML =
+                '<style>' +
+                '	h3 { color: red; text-transform: uppercase; }' +
+                '</style>' +
+                '<h3>Shadow root</h3>';
+    </script>
+
+</body>
+</html>

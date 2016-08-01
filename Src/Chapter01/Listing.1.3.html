@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Polymer Page</title>
+
+    <!-- Import Polymer Framework -->
+    <script type="text/javascript" src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="bower_components/polymer/polymer-mini.html">
+    <link rel="import" href="bower_components/font-roboto/roboto.html">
+
+    <!-- Import Paper Card web component -->
+    <link rel="import" href="bower_components/paper-card/paper-card.html">
+    <link rel="import" href="bower_components/paper-button/paper-button.html">
+
+</head>
+<body>
+    <style>
+        html {
+            font-family: "Roboto", Helvetica, Arial, sans-serif;
+            background-color: #EFEFEF;
+        }
+
+        paper-card {
+            min-width: 350px;
+        }
+    </style>
+
+    <!-- Paper Card -->
+    <paper-card heading="My First paper card">
+        <div class="card-content">The content of my card.</div>
+        <div class="card-actions">
+            <paper-button>Action</paper-button>
+        </div>
+    </paper-card>
+
+</body>
+</html>
